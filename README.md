@@ -91,15 +91,9 @@ Built as a team project for **SE-451: Data Structures and Applications** at UBIT
 
 ## ⚙️ How It Works
 
-```mermaid
-flowchart TD
-    A["Main Menu"] --> B["Donor Module - BST"]
-    A --> C["Blood Inventory - Linked List"]
-    A --> D["Patient Requests - Queue"]
-    A --> E["Issue History - Stack"]
-    D -->|process request| C
-    C -->|blood issued| E
-```
+<p align="center">
+  <img src="screenshots/system-flow-diagram.png" alt="System flow diagram: the main menu connects the donor module (BST), patient requests (queue), blood inventory (linked list) and issue history (stack)" width="90%">
+</p>
 
 **Request flow:** a request joins the **queue** → when processed, the **linked list** is searched for the blood group → if found, one unit is deducted and the issue is pushed onto the **stack**.
 
@@ -202,7 +196,7 @@ g++ -std=c++11 BloodBank.cpp -o redvault
 Red-Vault-Blood-Bank-System/
 ├── BloodBank.cpp        # complete source code
 ├── README.md
-└── screenshots/         # program output images
+└── screenshots/         # program output images and system diagram
 ```
 
 </details>
