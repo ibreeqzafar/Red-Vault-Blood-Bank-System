@@ -93,12 +93,12 @@ Built as a team project for **SE-451: Data Structures and Applications** at UBIT
 
 ```mermaid
 flowchart TD
-    A([Main Menu]) --> B[Donor Module<br/>Binary Search Tree]
-    A --> C[Blood Inventory<br/>Linked List]
-    A --> D[Patient Requests<br/>Queue]
-    A --> E[Issue History<br/>Stack]
-    D -- "process request" --> C
-    C -- "blood issued" --> E
+    A["Main Menu"] --> B["Donor Module - BST"]
+    A --> C["Blood Inventory - Linked List"]
+    A --> D["Patient Requests - Queue"]
+    A --> E["Issue History - Stack"]
+    D -->|process request| C
+    C -->|blood issued| E
 ```
 
 **Request flow:** a request joins the **queue** → when processed, the **linked list** is searched for the blood group → if found, one unit is deducted and the issue is pushed onto the **stack**.
